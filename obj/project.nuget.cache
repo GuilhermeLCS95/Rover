@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nXU4qLLcooTJCPLctQjcPY0dozylv093kXm+XKxF3oybVvujhnNhxPg5vocKMxZrW6xficaL8+tVP4uM6AuYFQ==",
+  "dgSpecHash": "EYTR6+yXyqh3ZUaOZ7kQYXgK2m9g+FUbekK2anSJGyOJXJWm1yxLtzDRqSDAEjEnvJqIiH7SUZn9uVMVUebXlg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gui_f\\source\\repos\\Rovers\\Rovers.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\gui_f\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.15\\microsoft.windowsdesktop.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\gui_f\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.15\\microsoft.netcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\gui_f\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.15\\microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\gui_f\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.15\\microsoft.netcore.app.host.win-x64.6.0.15.nupkg.sha512"
+  ],
   "logs": []
 }

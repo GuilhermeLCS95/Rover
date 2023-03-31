@@ -10,18 +10,26 @@ namespace Rovers
         public Rover rover { get; set; }
         public Mars mars { get; set; }
 
-        public Mars(int maxValueX, int maxValueY) 
-        { 
+        public Mars(int maxValueX, int maxValueY)
+        {
             MaxValueX = maxValueX;
-            MaxValueY = maxValueY;                   
+            MaxValueY = maxValueY;
         }
-        public void BelowZeroMars()
-        {           
-            if (MaxValueY < 0 || MaxValueX < 0)
+
+      
+
+        public bool MarsGreaterThanZero(int maxValueX, int maxValueY)
+        {
+            while (maxValueX <= 0 || maxValueY <= 0)
             {
-                Console.WriteLine("Mars' size cannot be less than zero. ");
-                Environment.Exit(0);
-            }            
-        }     
+                Console.Write("The values of X and Y must be greater than zero. Please try again. ");
+                string[] getValueXY = Console.ReadLine().Split(' ');
+                maxValueX = int.Parse(getValueXY[0]);
+                maxValueY = int.Parse(getValueXY[1]);
+                mars = new Mars(maxValueX, maxValueY);
+            }
+            return false;
+        }
     }
+    
 }
