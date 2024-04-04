@@ -7,29 +7,50 @@ namespace Rovers
     {
         public int MaxValueX { get; set; }
         public int MaxValueY { get; set; }
-        public Rover rover { get; set; }
         public Mars mars { get; set; }
 
-        public Mars(int maxValueX, int maxValueY)
+        public Mars()
         {
-            MaxValueX = maxValueX;
-            MaxValueY = maxValueY;
+        }
+        
+
+        public void InsertingMarsValues() 
+        {
+            do
+            {
+                Console.Write("Please, insert the max value of X, space and, after that, put Y's value. (ex:10 10): ");
+                string[] getMarsBounds = Console.ReadLine().Split(' ');
+                int valueX = int.Parse(getMarsBounds[0]);
+                int valueY = int.Parse(getMarsBounds[1]);
+                MaxValueX = valueX;
+                MaxValueY = valueY;
+                
+            } while (MarsGreaterThanZero());
         }
 
-      
 
-        public bool MarsGreaterThanZero(int maxValueX, int maxValueY)
+        private bool MarsGreaterThanZero()
         {
-            while (maxValueX <= 0 || maxValueY <= 0)
-            {
-                Console.Write("The values of X and Y must be greater than zero. Please try again. ");
-                string[] getValueXY = Console.ReadLine().Split(' ');
-                maxValueX = int.Parse(getValueXY[0]);
-                maxValueY = int.Parse(getValueXY[1]);
-                mars = new Mars(maxValueX, maxValueY);
+            if (MaxValueX <= 0 || MaxValueY <= 0) {
+                Console.WriteLine("Mars' size cannot be a negative value. Please, try again.");
+                return true;
             }
             return false;
         }
+
+        // IGNORA ABAIXO, JOÃO
+
+        private bool MarsNullValue (int maxValueX, int maxValueY)
+        {
+            if (maxValueX == null || maxValueY == null)
+            {
+                Console.WriteLine("You must insert a valid value. It cannot be null.");
+                return true;
+            }
+            return false;
+        }
+
+       
     }
     
 }

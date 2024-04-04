@@ -3,7 +3,6 @@ C:\Users\gui_f\source\repos\Rovers\bin\Debug\net6.0\Rovers.deps.json
 C:\Users\gui_f\source\repos\Rovers\bin\Debug\net6.0\Rovers.runtimeconfig.json
 C:\Users\gui_f\source\repos\Rovers\bin\Debug\net6.0\Rovers.dll
 C:\Users\gui_f\source\repos\Rovers\bin\Debug\net6.0\Rovers.pdb
-C:\Users\gui_f\source\repos\Rovers\obj\Debug\net6.0\Rovers.csproj.AssemblyReference.cache
 C:\Users\gui_f\source\repos\Rovers\obj\Debug\net6.0\Rovers.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\gui_f\source\repos\Rovers\obj\Debug\net6.0\Rovers.AssemblyInfoInputs.cache
 C:\Users\gui_f\source\repos\Rovers\obj\Debug\net6.0\Rovers.AssemblyInfo.cs
