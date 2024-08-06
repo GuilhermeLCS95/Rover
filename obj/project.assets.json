@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gui_f\\source\\repos\\RoverProject\\RoverProject\\RoverProject.csproj",
+      "projectUniqueName": "C:\\Users\\gui_f\\source\\repos\\Rover\\RoverProject.csproj",
       "projectName": "RoverProject",
-      "projectPath": "C:\\Users\\gui_f\\source\\repos\\RoverProject\\RoverProject\\RoverProject.csproj",
+      "projectPath": "C:\\Users\\gui_f\\source\\repos\\Rover\\RoverProject.csproj",
       "packagesPath": "C:\\Users\\gui_f\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gui_f\\source\\repos\\RoverProject\\RoverProject\\obj\\",
+      "outputPath": "C:\\Users\\gui_f\\source\\repos\\Rover\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gui_f\\AppData\\Roaming\\NuGet\\NuGet.Config",

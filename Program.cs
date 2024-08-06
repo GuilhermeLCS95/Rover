@@ -1,4 +1,5 @@
 ﻿using RoverProject.Entities;
+using RoverProject.Enums;
 using RoverProject.Repository;
 using RoverProject.Services;
 
@@ -10,14 +11,16 @@ namespace RoverProject
         {
             Mars mars = new Mars();
             Rover rover = new Rover();
-            IMovingRover movingRover = new MovingRover(mars, rover);
+            IInitializingMarsAndRover initializing = new InitializingMarsAndRover(mars, rover);
             IEvents events = new Events(mars, rover);
-
-            movingRover.SettingMarsSize();
-            events.GeneratingDiscoveries();           
-            movingRover.SettingRoverPos();
+            IMovingRover movingRover = new MovingRover(mars, rover, events);
+            
+           
+            
+            initializing.SettingMarsSize();
+            events.GeneratingDiscoveries();
+            initializing.SettingRoverPos();
             movingRover.UserInputRoverActions();
-            events.CheckingDiscoveries();
             Console.WriteLine(movingRover);
         }
     }

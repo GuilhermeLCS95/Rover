@@ -15,19 +15,13 @@ namespace RoverProject.Services
         private Rover rover;
         Random random = new Random();
 
+
         public Events(Mars mars, Rover rover)
         {
             this.mars = mars;
             this.rover = rover;
         }
 
-        public void CheckingDiscoveries()
-        {
-            if (rover.GetRoverPosX() == discoveries.GetDiscoveryPosX() && rover.GetRoverPosY() == discoveries.GetDiscoveryPosY())
-            {
-                Console.WriteLine("You found something. Is that an alien?");
-            }
-        }
         public void GeneratingDiscoveries()
         {
             int marsSizeX = mars.GetMarsSizeX();
@@ -40,6 +34,16 @@ namespace RoverProject.Services
 
             Console.WriteLine("Alien: " + randomPosX + " " + randomPosY);
         }
+
+        public void CheckingDiscoveries()
+        {
+            if (rover.GetRoverPosX() == discoveries.GetDiscoveryPosX() && rover.GetRoverPosY() == discoveries.GetDiscoveryPosY())
+            {
+
+                Console.WriteLine("You found something. Is that an alien?");
+            }
+        }
+       
 
     }
 }
